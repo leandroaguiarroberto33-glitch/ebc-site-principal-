@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071428" />
+  <meta name="description" content="Quartel General do Exército Brasileiro de Combate: divisões, hierarquia, patentes e verificação." />
+  <title>EBC • Quartel General</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+      <a class="brand" href="#inicio" data-page="inicio" aria-label="Ir para a página inicial">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 76" fill="none"><path d="M32 2 58 12v24c0 18-11 29-26 38C17 65 6 54 6 36V12L32 2Z" fill="#17355e" stroke="#69bcff" stroke-width="2"/><path d="m32 14 4.3 12.7H50l-11 8.1L43.2 48 32 40.1 20.8 48 25 34.8l-11-8.1h13.7L32 14Z" fill="#d3e8ff"/><path d="M15 53c5 6 10 10 17 14 7-4 12-8 17-14" stroke="#69bcff" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <div class="brand-name"><strong>EXÉRCITO BRASILEIRO</strong><span>DE COMBATE <i>• EBC</i></span></div>
+      </a>
+      <div class="sidebar-scroll">
+        <div class="sidebar-kicker">QUARTEL GENERAL</div>
+        <nav class="main-nav" aria-label="Navegação">
+          <span class="nav-label">PRINCIPAL</span>
+          <a href="#inicio" class="nav-link active" data-page="inicio"><span class="nav-icon">⌂</span> Início <span class="nav-arrow">›</span></a>
+          <a href="#perfil" class="nav-link" data-page="perfil"><span class="nav-icon">♙</span> Meu perfil</a>
+          <a href="#promocoes" class="nav-link" data-page="promocoes"><span class="nav-icon">↑</span> Como subir de patente</a>
+          <a href="#cdp" class="nav-link" data-page="cdp"><span class="nav-icon">◴</span> CDP</a>
+          <span class="nav-label">CONSULTA</span>
+          <a href="#hierarquia" class="nav-link" data-page="hierarquia"><span class="nav-icon">♜</span> Hierarquia</a>
+          <a href="#divisoes" class="nav-link" data-page="divisoes"><span class="nav-icon">✥</span> Divisões</a>
+          <a href="#historico" class="nav-link" data-page="historico"><span class="nav-icon">▤</span> Histórico</a>
+          <a href="#ranking" class="nav-link" data-page="ranking"><span class="nav-icon">♛</span> Ranking</a>
+          <span class="nav-label">ACESSO</span>
+          <a href="#links" class="nav-link" data-page="links"><span class="nav-icon">↗</span> Links oficiais</a>
+          <a class="nav-link external" data-link="verification" target="_blank" rel="noopener noreferrer"><span class="nav-icon">✓</span> Verificar conta <span class="out-icon">↗</span></a>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="quick-links"><a data-link="discord" target="_blank" rel="noopener noreferrer" aria-label="Abrir Discord" title="Discord">◈ <small>Discord</small></a><a data-link="game" target="_blank" rel="noopener noreferrer" aria-label="Abrir jogo no Roblox" title="Roblox">◧ <small>Roblox</small></a></div>
+        <button class="user-chip" id="profileChip" data-nav="perfil" title="Editar perfil local"><span class="avatar" id="sideAvatar">M</span><span class="user-chip-text"><strong id="sideUser">Militar</strong><small>Perfil local • editar</small></span><span class="chip-arrow">›</span></button>
+      </div>
+    </aside>
+
+    <div class="mobile-backdrop" id="menuBackdrop" hidden></div>
+    <main class="main-area" id="mainArea">
+      <header class="topbar">
+        <div class="topbar-title"><button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button><div><p id="topEyebrow">CENTRO DE OPERAÇÕES</p><h1 id="topTitle">QUARTEL <span>GENERAL</span></h1></div></div>
+        <div class="topbar-right"><div class="online-indicator"><span></span> PORTAL EBC</div><a class="header-button" data-link="verification" target="_blank" rel="noopener noreferrer">✓ <span>VERIFICAR</span></a></div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="page active" data-view="inicio" aria-labelledby="homeWelcome">
+          <div class="alert-banner"><div class="alert-emoji">✦</div><div><span class="mini-pill">PORTAL OFICIAL DO JOGO</span><strong>Seu quartel começa aqui</strong><p>Acesse a verificação, conheça as divisões e acompanhe as informações da comunidade.</p></div><button class="banner-cta" data-nav="links">EXPLORAR <span>↗</span></button></div>
+          <div class="hero-card"><div class="hero-decor decor-one"></div><div class="hero-decor decor-two"></div><div class="hero-content"><div class="eyebrow">🪖 BEM-VINDO AO QUARTEL</div><h2 id="homeWelcome">Olá, <span id="welcomeName">Militar</span></h2><p>Este é o painel central do Exército Brasileiro de Combate. Prepare-se para a missão, confira as informações e entre no jogo.</p><div class="hero-actions"><a class="btn btn-green" data-link="game" target="_blank" rel="noopener noreferrer">🎮 ENTRAR NO JOGO <span>↗</span></a><a class="btn btn-outline" data-link="verification" target="_blank" rel="noopener noreferrer">✓ VERIFICAR CONTA <span>↗</span></a></div></div><div class="hero-shield" aria-hidden="true"><svg viewBox="0 0 64 76" fill="none"><path d="M32 2 58 12v24c0 18-11 29-26 38C17 65 6 54 6 36V12L32 2Z" fill="#17355e" stroke="#69bcff" stroke-width="2"/><path d="m32 14 4.3 12.7H50l-11 8.1L43.2 48 32 40.1 20.8 48 25 34.8l-11-8.1h13.7L32 14Z" fill="#d3e8ff"/></svg></div></div>
+          <div class="home-stats"><div class="stat-card"><span class="stat-symbol">🛡️</span><div><strong>VERIFICAÇÃO</strong><span>Discord + Roblox</span></div><span class="stat-tag green">ACESSAR</span></div><div class="stat-card"><span class="stat-symbol">⚔️</span><div><strong>5 DIVISÕES</strong><span>Conheça as unidades</span></div><span class="stat-tag">EBC</span></div><div class="stat-card"><span class="stat-symbol">🎖️</span><div><strong>HIERARQUIA</strong><span>Praças e oficiais</span></div><span class="stat-tag">CONSULTAR</span></div></div>
+          <div class="section-heading"><div><small>FIQUE POR DENTRO</small><h3>Comunicados do quartel</h3></div><button class="text-action" data-nav="links">Acessos úteis ↗</button></div>
+          <div class="news-grid" id="newsGrid"></div>
+          <div class="section-heading"><div><small>CONHEÇA A ESTRUTURA</small><h3>Divisões do EBC</h3></div><button class="text-action" data-nav="divisoes">Todas as divisões ↗</button></div>
+          <div class="division-strip"><button data-nav="divisoes">🧠 <strong>CIE</strong><small>Inteligência</small></button><button data-nav="divisoes">⚔️ <strong>FE</strong><small>Forças especiais</small></button><button data-nav="divisoes">💀 <strong>BAC</strong><small>Comandos</small></button><button data-nav="divisoes">🚓 <strong>PE</strong><small>Polícia</small></button><button data-nav="divisoes">🌿 <strong>CIGS</strong><small>Selva</small></button></div>
+        </section>
+
+        <section class="page" data-view="perfil" aria-labelledby="perfilTitle"><div class="page-lead"><small>ÁREA DO MILITAR</small><h2 id="perfilTitle">Meu perfil</h2><p>Personalize como seu nome aparece neste navegador. O perfil ainda não está sincronizado com a conta do Roblox ou com o Discord.</p></div><div class="two-column"><article class="panel profile-preview"><div class="profile-circle" id="profileAvatar">M</div><h3 id="profilePreviewName">Militar</h3><p>EBC • perfil local</p><span class="status-chip">◉ Prévia do seu perfil</span></article><article class="panel"><h3>Editar identificação</h3><p>Digite seu apelido para aparecer na página inicial.</p><form id="profileForm"><label for="nickname">Seu nome no portal</label><input id="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="Ex.: MeuNickRoblox" required /><button type="submit" class="btn btn-green full">SALVAR NOME ✓</button></form><p class="small-note">A alteração fica salva somente neste navegador. Para confirmar sua conta de verdade, use a verificação.</p><a class="inline-link" data-link="verification" target="_blank" rel="noopener noreferrer">Ir para verificação ↗</a></article></div></section>
+
+        <section class="page" data-view="promocoes" aria-labelledby="promocoesTitle"><div class="page-lead"><small>CARREIRA MILITAR</small><h2 id="promocoesTitle">Como subir de patente</h2><p>Orientações gerais para evoluir no jogo. Os requisitos oficiais, prazos e responsáveis devem ser definidos pela administração do seu servidor.</p></div><div class="steps"><div class="step-card"><b>01</b><div><h3>Faça parte do EBC</h3><p>Entre no grupo e siga as instruções divulgadas pela equipe de comando.</p></div></div><div class="step-card"><b>02</b><div><h3>Participe dos treinamentos</h3><p>Acompanhe os canais de treinamentos e avaliações disponíveis para sua patente.</p></div></div><div class="step-card"><b>03</b><div><h3>Cumpra os requisitos</h3><p>Consulte as regras de comportamento, desempenho e CDP do servidor.</p></div></div><div class="step-card"><b>04</b><div><h3>Aguarde a avaliação</h3><p>As promoções são concedidas pelos responsáveis, conforme as regras da comunidade.</p></div></div></div><div class="info-panel">ℹ️ Esta página é informativa. Ela não realiza promoções automáticas nem altera sua patente no Roblox ou Discord.</div></section>
+
+        <section class="page" data-view="cdp" aria-labelledby="cdpTitle"><div class="page-lead"><small>PROGRESSÃO</small><h2 id="cdpTitle">CDP • Pontos de carreira</h2><p>Espaço reservado para acompanhar o sistema de CDP do EBC.</p></div><div class="feature-card"><span>◴</span><h3>Integração em desenvolvimento</h3><p>Para exibir seus pontos reais, o portal precisará se conectar ao sistema de CDP utilizado pelo jogo. Não mostramos um saldo fictício.</p><button class="btn btn-outline" data-nav="promocoes">VER ORIENTAÇÕES ↗</button></div></section>
+
+        <section class="page" data-view="hierarquia" aria-labelledby="hierarquiaTitle"><div class="page-lead"><small>CADEIA DE COMANDO</small><h2 id="hierarquiaTitle">Hierarquia militar</h2><p>Categorias ilustrativas de patentes. A lista oficial e a ordem das promoções podem ser personalizadas conforme as regras do seu jogo.</p></div><div class="hierarchy-grid"><article class="panel rank-panel"><span>🪖</span><h3>Praças</h3><p>Entrada e desenvolvimento inicial da carreira.</p><div class="rank-list"><span>Recruta</span><span>Soldado</span><span>Cabo</span></div></article><article class="panel rank-panel"><span>🎖️</span><h3>Graduados</h3><p>Militares com funções de liderança e instrução.</p><div class="rank-list"><span>3º Sargento</span><span>2º Sargento</span><span>1º Sargento</span></div></article><article class="panel rank-panel"><span>⭐</span><h3>Oficiais</h3><p>Funções de comando e administração.</p><div class="rank-list"><span>Aspirante</span><span>Tenente</span><span>Capitão</span><span>Oficiais superiores</span></div></article></div></section>
+
+        <section class="page" data-view="divisoes" aria-labelledby="divisoesTitle"><div class="page-lead"><small>UNIDADES OPERACIONAIS</small><h2 id="divisoesTitle">Divisões do EBC</h2><p>Conheça as divisões representadas no servidor. As atividades e inscrições seguem os comunicados da administração.</p></div><div class="divisions-grid"><article class="division-card purple"><span>🧠</span><strong>CIE</strong><h3>Centro de Inteligência do Exército</h3><p>Divisão dedicada à inteligência e às atividades definidas pelo comando.</p></article><article class="division-card blue"><span>⚔️</span><strong>FE</strong><h3>Forças Especiais do Exército</h3><p>Unidade de operações especiais no universo do jogo.</p></article><article class="division-card red"><span>💀</span><strong>BAC</strong><h3>Batalhão de Ações de Comandos</h3><p>Unidade de comandos e treinamentos específicos.</p></article><article class="division-card sky"><span>🚓</span><strong>PE</strong><h3>Polícia do Exército</h3><p>Área de policiamento e organização militar do servidor.</p></article><article class="division-card green"><span>🌿</span><strong>CIGS</strong><h3>Centro de Instrução de Guerra na Selva</h3><p>Divisão voltada a atividades e treinamento na selva.</p></article></div></section>
+
+        <section class="page" data-view="historico" aria-labelledby="historicoTitle"><div class="page-lead"><small>REGISTROS</small><h2 id="historicoTitle">Meu histórico</h2><p>Área reservada para os treinamentos, promoções e movimentações do militar.</p></div><div class="feature-card"><span>▤</span><h3>Histórico ainda não conectado</h3><p>Os registros reais aparecerão aqui depois da integração com o sistema de dados do jogo.</p><a class="btn btn-outline" data-link="verification" target="_blank" rel="noopener noreferrer">ABRIR VERIFICAÇÃO ↗</a></div></section>
+        <section class="page" data-view="ranking" aria-labelledby="rankingTitle"><div class="page-lead"><small>DESTAQUES</small><h2 id="rankingTitle">Ranking</h2><p>Espaço reservado para os rankings oficiais da comunidade.</p></div><div class="feature-card"><span>♛</span><h3>Ranking em desenvolvimento</h3><p>Quando as informações forem conectadas ao jogo, o portal poderá exibir posições e resultados reais.</p><button class="btn btn-outline" data-nav="inicio">VOLTAR AO QUARTEL ↗</button></div></section>
+        <section class="page" data-view="links" aria-labelledby="linksTitle"><div class="page-lead"><small>ACESSO RÁPIDO</small><h2 id="linksTitle">Links do EBC</h2><p>Acesse os serviços e os canais da comunidade.</p></div><div class="link-list"><a class="link-tile" data-link="verification" target="_blank" rel="noopener noreferrer"><span>✓</span><div><h3>Verificar minha conta</h3><p>Vincular Discord e confirmar Roblox.</p></div><b>↗</b></a><a class="link-tile" data-link="game" target="_blank" rel="noopener noreferrer"><span>🎮</span><div><h3>Entrar no jogo</h3><p>Abre a página do EBC no Roblox, após configurar o link.</p></div><b>↗</b></a><a class="link-tile" data-link="discord" target="_blank" rel="noopener noreferrer"><span>◈</span><div><h3>Servidor do Discord</h3><p>Acesse a comunidade, após configurar o convite.</p></div><b>↗</b></a></div><p class="small-note">O endereço do jogo e o convite do Discord são editados em <code>config.js</code>.</p></section>
+      </div>
+      <footer class="site-footer"><span>© <span id="year"></span> EBC • Exército Brasileiro de Combate</span><span>Comunidade de roleplay no Roblox • Projeto não oficial</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
